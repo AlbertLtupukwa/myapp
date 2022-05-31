@@ -1,0 +1,49 @@
+{% load static %}
+
+<style>
+    .deco {
+        text-decoration: none !important;
+    }
+</style>
+
+<footer class="bg-dark">
+    <div class="container">
+        <div class="row  text-light">
+            <div class="col-sm-4 text-light">
+                <h1 class="text-light">Myapp</h1>
+                <p>This is my app</p>
+            </div>
+            <div class="col-sm-4">
+                <h1>Quick Links</h1>
+                <ul class="deco">
+                    <li class="deco">Home</li>
+                    <li class="deco">About</li>
+                    <li class="deco">Contact</li>
+                    <li class="deco">Admin</li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Username</label>
+                        <input type="text" name="name" class="form-control" required placeholder="enter your name">
+                        
+                      </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" name="email" required placeholder="your email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      
+                    </div>
+                    <div class="mb-3">
+                      <label  class="form-label">Message</label>
+                      <textarea name="body" type="text" class="form-control"></textarea>
+                    </div>
+                   
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+
+</footer>

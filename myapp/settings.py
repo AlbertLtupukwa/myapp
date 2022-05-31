@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # my registed app
     'base',
+    'bootstrap5',
 ]
 
 MIDDLEWARE = [

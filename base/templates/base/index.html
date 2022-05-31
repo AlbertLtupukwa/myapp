@@ -1,0 +1,29 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<main>
+    <div>
+        <h1>Home</h1>
+        <p>This is index page</p>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+
+                {% for text in texts %}
+                <div class="col-sm-8">
+                    <h1>Name: {{text.name}} </h1>
+                    <p>Email: {{text.email}} </p>
+                    <p>Text: {{text.body}} </p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>    
+</main>
+
+
+{% endblock %}
