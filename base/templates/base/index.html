@@ -3,12 +3,141 @@
 {% block content %}
 
 {% load static %}
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: whitesmoke;
+        padding: 20px;
+        font-family: Arial;
+    }
+    
+   
+    .main {
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    h1 {
+        font-size: 50px;
+        word-break: break-all;
+        text-align: center;
+    }
+
+    h2{
+      text-align: center;
+    }
+
+    p{
+      color: #020713cc;
+    }
+    
+    .row {
+        margin: 8px -16px;
+      
+    }
+    
+    .row,
+    .row > .column {
+        padding: 4px;
+    }
+    
+  
+    .column {
+        float: left;
+        width: 24%;
+    }
+ 
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+  
+    .content {
+        background-color: rgb(83, 83, 126);
+        padding: 10px;
+    }
+    .column > div{
+        height: 300px;
+    }
+    
+
+    @media screen and (max-width: 900px) {
+        .column {
+            width: 50%;
+        }
+    }
+    
+  
+    @media screen and (max-width: px) {
+        .column {
+            width: 10px;
+        }
+    }
+
+hr{
+  color: #837b08;
+}
+
+</style>
 
 <main>
-    <div>
-        <h1>Home</h1>
-        <p>This is index page</p>
-    </div>
+    <div class="main">
+    
+        <h1>Bertos Tech Solutions</h1>
+        <hr>
+        <h2><i>Your preferred number one service provider<br>Our Services</i></h2>
+        <hr>
+        
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="column">
+            <div class="content">
+              <h3>Software Design</h3>
+              <hr>
+              <p>We provide both off-the-self and Tailor-made software solutions for business to make sure they
+                are more competitive and are profitable.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <h3>Cloud Computing</h3>
+              <hr>
+              <p>We provide cloud computing to provise security of the data of business to protect the from
+                hackers and easy access to there data anywhere and any time.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <h3>Database Administration</h3>
+              <hr>
+              <p>We provide database design, database administration and data analysis to provide 
+                security,safety and  easy retrieval of data.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <h3>Web Hosting</h3>
+              <hr>
+              <p>Bertos Solutions provide web hosting and also networking services to businesses to ensure they are competitive and profitable.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="content">
+          <h3><i>About Us</i></h3>
+          <p><i> Bertos Tech Solutions, Your all time Modern Technology Provider.</i></p>
+          <p>This company was established on basis of providing solution to business and make sure they
+            minimise the input and maximize their output.</p>
+        </div>
+        
+      
+        </div>
+    <hr>
     <div>
         <div class="container">
             <div class="row">
